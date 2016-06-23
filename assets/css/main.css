@@ -1,0 +1,66 @@
+.nav-bar {
+  /*border: 1px solid red;*/
+  margin: 0 auto;
+  width: 90%;
+}
+.sidebar{    position: fixed;
+    z-index: 3;
+    top: 50px;
+    left: 225px;
+    width: 225px;
+    margin-left: -225px;
+    border: none;
+    border-radius: 0;
+    overflow-y: auto;
+    background-color: #fcfcfc;
+    bottom: 0;
+    overflow-x: hidden;
+    padding-bottom: 40px;
+    transition: all 0.2s ease-in-out;}
+/*.sidebar{
+position: fixed;
+top: 51px;
+bottom: 0;
+left: 0;
+z-index: 1000;
+display: block;
+padding: 20px;
+overflow-x: hidden;
+overflow-y: auto;
+background-color: #fcfcfc;
+border-right: 1px solid #eee;
+}*/
+.submenu{
+  list-style: none;
+height: auto;
+}
+.list-group{
+  padding-left: 0;
+margin-bottom: 0;
+    box-sizing: inherit;;
+}
+.container {
+  margin-top: 80px;
+  width: 60%;
+  /*border: 1px solid red;*/
+}
+.loginform{
+  margin-left:-200px;
+}
+
+/*디자인 요소들 설정값*/
+.box {
+  border: 1px solid red;
+}
+img{
+  width:auto;
+  margin: 0 auto;
+}
+.btn-primary, .btn-primary:hover, .btn-primary:active {
+    background-color: red;
+}
+.image-background {
+  background-color: #212124;
+  width:auto;
+  height: 500px;
+}
