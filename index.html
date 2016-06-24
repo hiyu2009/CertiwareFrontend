@@ -52,7 +52,13 @@
           format: 'register',
           defaultExtension: 'js'
         }
-      }
+      },
+      paths: {
+        'moment': 'node_modules/moment/moment.js'
+      },
+      meta: {
+        'moment': { 'format': 'global' }
+      },
     });
     System.import('build/main')
           .then(null, console.error.bind(console));
