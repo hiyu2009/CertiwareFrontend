@@ -22,7 +22,7 @@ import {ProjectListViewDataService} from './pages/project/projectList/services/p
       <nav-bar></nav-bar>
       <side-bar></side-bar>
       <router-outlet></router-outlet>
-      `
+      테스트테스트
 })
 
 @RouteConfig([
