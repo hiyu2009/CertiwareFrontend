@@ -2,7 +2,7 @@
 
 import {Component, ViewContainerRef, Input, Output, EventEmitter, AfterViewInit} from 'angular2/core';
 import {NgIf, NgFor, NgClass, NgModel, FORM_DIRECTIVES, ControlValueAccessor} from 'angular2/common';
-import * as moment_ from 'node_modules/moment/moment.js';
+import * as moment_ from 'moment';
 
 const moment: moment.MomentStatic = (<any>moment_)['default'] || moment_;
 
@@ -17,7 +17,7 @@ interface CalendarDate {
   selector: 'datepicker[ngModel]',
   template: `
   <input type="text"
-         class="ng-datepicker-input"
+         class="ng-datepicker-input form-control"
          (focus)="openDatepicker()"
          [value]="viewValue"
          [hidden]="isStatic"
@@ -59,8 +59,8 @@ interface CalendarDate {
   }
 
   .ng-datepicker {
-    position: absolute;
-    z-index: 99;
+    position: absoult;
+    z-index: 990;
     width: 250px;
     background: #fff;
     font-size: 12px;

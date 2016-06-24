@@ -1,88 +1,22 @@
-<h1>Project Add</h1>
-<form [(ngModel)]="projectModel" ngSubmit="onSubmit()">
-  <div class="row">
-    <div class="form-group">
-      <label class="col-sm-1 control-label">프로젝트 명</label>
-      <div class="col-sm-11">
-        <input type="text" class="form-control" placeholder="프로젝트 명">
-      </div>
+<div class="row">
+  <div class="form-group">
+    <label class="col-sm-1 control-label">매출처</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control">
     </div>
   </div>
-
-  <div class="row">
-    <div class="form-group">
-      <label class="col-sm-1 control-label">매출처</label>
-      <div class="col-sm-3">
-        <input type="text" class="form-control">
-      </div>
-    </div>
-    <div class="form-group">
-      <label class="col-sm-1 control-label">시작일</label>
-      <div class="col-sm-3">
-         <datepicker [(ngModel)]="test1.date" view-format="DD.MM.YYYY" model-format="YYY-MM-DD" init-date="2017-05-12"></datepicker>
-        <!-- <datePicker></datePicker> -->
-      </div>
-    </div>
-    <div class="form-group">
-      <label class="col-sm-1 control-label">종료일</label>
-      <div class="col-sm-3">
-        <input type="text" class="form-control">
-        <!-- <datePicker></datePicker> -->
-      </div>
+  <div class="form-group">
+    <label class="col-sm-1 control-label">시작일</label>
+    <div class="col-sm-3">
+       <datepicker [(ngModel)]="date1" view-format="DD.MM.YYYY" model-format="YYY-MM-DD" init-date="2017-05-12"></datepicker>
+      <!-- <datePicker></datePicker> -->
     </div>
   </div>
-
-  <div class="row">
-    <div class="form-group">
-      <label class="col-sm-1 control-label">계약금액</label>
-      <div class="col-sm-5">
-        <input type="text" class="form-control">
-        <!-- <datePicker></datePicker> -->
-      </div>
-    </div>
-    <div class="form-group">
-      <label class="col-sm-1 control-label">외주금액</label>
-      <div class="col-sm-5">
-        <input type="text" class="form-control">
-        <!-- <datePicker></datePicker> -->
-      </div>
+  <div class="form-group">
+    <label class="col-sm-1 control-label">종료일</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control">
+      <!-- <datePicker></datePicker> -->
     </div>
   </div>
-
-  <div class="row">
-    <div class="form-group">
-      <label class="col-sm-1 control-label">공급가액</label>
-      <div class="col-sm-5">
-        <input type="text" class="form-control">
-        <!-- <datePicker></datePicker> -->
-      </div>
-    </div>
-    <div class="form-group">
-      <label class="col-sm-1 control-label">부가세액</label>
-      <div class="col-sm-5">
-        <input type="text" class="form-control">
-        <!-- <datePicker></datePicker> -->
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="form-group">
-      <label class="col-sm-1 control-label">순매출</label>
-      <div class="col-sm-5">
-        <p class="form-control-static">{{ calcNetAmount }}</p>
-        <!-- <datePicker></datePicker> -->
-      </div>
-    </div>
-    <div class="form-group">
-      <label class="col-sm-1 control-label">계약총액</label>
-      <div class="col-sm-5">
-        <input type="text" class="form-control">
-        <!-- <datePicker></datePicker> -->
-      </div>
-    </div>
-  </div>
-
-  <button type="submit" name="button" class="btn btn-default">등록</button>
-
-</form>
+</div>

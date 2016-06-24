@@ -5,10 +5,12 @@ import {DatePicker} from '../../../common/components/ng2-datepicker';
 @Component({
   selector: 'project-add',
   directives: [DatePicker],
+  styleUrls: ['app/pages/project/css/project.css'],
   templateUrl: 'app/pages/project/projectAdd/projectAdd.html'
 })
 export class ProjectAdd {
-  dtae:string;
+  dtae1:string;
+  dtae2:string;
 
 
   projectModel: Project;

@@ -9,7 +9,7 @@ import { DeptCode } from '../../../common/models/deptCode.model';
 @Component({
   selector: 'project-list',
   directives: [ROUTER_DIRECTIVES],
-  styleUrls: ['app/pages/project/projectList/css/projectList.css'],
+  styleUrls: ['app/pages/project/css/project.css'],
   // providers: [ProjectCodeService, ProjectListViewDataService],
   templateUrl: 'app/pages/project/projectList/projectList.html'
 })
